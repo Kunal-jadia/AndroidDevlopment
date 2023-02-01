@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/L_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_bolt_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:contentDescription="login_logo"
+        />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Login to your account"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/L_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_mob"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Mobile"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/et_mob"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_pass"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:contentDescription="loginButton"
+        android:backgroundTint="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/Register_here"
+        android:textSize="20dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/momo"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/paso"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/momo"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

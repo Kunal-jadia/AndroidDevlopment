@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KotLin</string>
+    <string name="Register_here"><u>Register here</u></string>
+    <string name="Login_here"><u>Login_here</u></string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="cities">
+        <item>Select City</item>
+        <item>Gondal</item>
+        <item>Rajkot</item>
+        <item>Ahmedabad</item>
+        <item>Surat</item>
+        <item>Baroda</item>
+        <item>Amreli</item>
+    </string-array>
+</resources>
